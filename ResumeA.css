@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #18191a; /* ดำโทนมืด */
+    /* ลวดลายแบบ gradient และ noise */
+    background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 8px),
+        linear-gradient(120deg, #232526 0%, #18191a 100%);
+}
+
+/* ลวดลายจุด noise เล็กน้อย */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+}
+
+/* ปรับ parallax ให้พื้นหลังโปร่งใส */
+.parallax {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 800px) {
+    .parallax {
+        background-attachment: fixed;
+    }
+}
+
+.center-message {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.black-block {
+    background: #111;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-message {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 3rem;
+}
+.img-row {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+        .img-row img:first-child {
+            width: 250px;
+            height: auto;
+        }
