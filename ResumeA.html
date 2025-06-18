@@ -1,23 +1,94 @@
 <!-- อิงโค้ดมาจาก cell02-ex02 ในส่วนของรูปแบบหน้าเว็บ-->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Resume Suteemon</title>
+    <!-- เพิ่ม Google Fonts สำหรับใช้ฟอนต์ Sarabun และ Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <!-- เชื่อมไฟล์ CSS สำหรับตกแต่งหน้าเว็บ -->
     <link rel="stylesheet" href="ResumeA.css">
 </head>
 <body>
+    <!-- ส่วน Header พร้อมภาพและข้อมูลชื่อ-คณะ-สาขา -->
     <section class="parallax bg1">
-        <div class="img-row">
+        <div class="center-content">
+            <div class="img-row">
+                <!-- รูปโปรไฟล์ -->
                 <img src="https://i.pinimg.com/736x/18/0b/65/180b65de6c5ae60e43a615065c8622c2.jpg"  alt="">
+            </div>
+            <div class="center-message">
+                นางสาว สุธีมนต์ วงศ์พระราม<br>
+                <span class="faculty">คณะครุศาสตร์อุตสาหกรรม และเทคโนโลยี</span><br>
+                <span class="major">สาขาเทคโนโลยีคอมพิวเตอร์</span>
+            </div>
         </div>
-        <div class="center-message">Welcome to the Parallax World!</div>
     </section>
+    <!-- ส่วนเนื้อหาหลักของเว็บ (ข้อมูลหลักสูตรและข้อมูลเพิ่มเติม) -->
     <section class="black-block">
-        <div class="block-message">Scroll for more magic ✨</div>
-    </section>
-    <section class="parallax bg2">
-        <div class="center-message">Thanks for visiting!</div>
-    </section>
+    <div class="block-message1 block-flex">
+        <!-- ข้อมูลหลักสูตร -->
+        <div class="course-section">
+            <h2>หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาเทคโนโลยีคอมพิวเตอร์</h2>
+            <h3>ชื่อหลักสูตร</h3>
+            <ul>
+                <li><strong>ชื่อภาษาไทย :</strong> หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาเทคโนโลยีคอมพิวเตอร์</li>
+                <li><strong>ชื่อภาษาอังกฤษ :</strong> Bachelor of Science in Industrial Education Program in Computer technology</li>
+            </ul>
+            <h3>ชื่อปริญญาและสาขาวิชา</h3>
+            <ul>
+                <li><strong>ชื่อเต็ม (ภาษาไทย) :</strong> ครุศาสตร์อุตสาหกรรมบัณฑิต (เทคโนโลยีคอมพิวเตอร์)</li>
+                <li><strong>ชื่อเต็ม (ภาษาอังกฤษ) :</strong> Bachelor of Science in Industrial Education (Computer technology)</li>
+                <li><strong>ชื่อย่อ (ภาษาไทย) :</strong> ค.อ.บ. (เทคโนโลยีคอมพิวเตอร์)</li>
+                <li><strong>ชื่อย่อ (ภาษาอังกฤษ) :</strong> B.S.Ind.Ed. (Computer technology)</li>
+            </ul>
+            <h3>รายละเอียดหลักสูตร</h3>
+            <p>
+                หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาเทคโนโลยีคอมพิวเตอร์<br>
+                มุ่งผลิตครูคอมพิวเตอร์ที่มีสมรรถนะด้านวิชาชีพและเทคโนโลยีคอมพิวเตอร์ สามารถถ่ายทอดความรู้
+                และพัฒนาทักษะผู้เรียน สร้างนวัตกรรมเพื่อการเรียนรู้ พัฒนาชุมชนและสังคมอย่างยั่งยืน
+                พร้อมดำรงชีวิตอย่างมีความสุข โดยยึดมั่นในจรรยาบรรณวิชาชีพและสอดคล้องกับข้อกำหนดของหลักสูตร
+                ในสถานศึกษาทั้งระดับอาชีวศึกษาและการศึกษาขั้นพื้นฐาน
+            </p>
+        </div>
+        <!-- ข้อมูลเพิ่มเติม (อาชีพและโครงสร้างหลักสูตร) -->
+        <div class="side-info">
+            <h3>อาชีพที่สามารถประกอบได้หลังสำเร็จการศึกษา</h3>
+            <ul>
+                <li>1) ครูสาขาวิชาคอมพิวเตอร์ในหลักสูตรต่ำกว่าระดับปริญญาตรีทั้งสถานศึกษาของรัฐและเอกชน</li>
+                <li>2) นักฝึกอบรมด้านคอมพิวเตอร์ในสถานประกอบการ</li>
+                <li>3) นักพัฒนาซอฟต์แวร์</li>
+                <li>4) ผู้ดูแลระบบคอมพิวเตอร์และเครือข่ายคอมพิวเตอร์</li>
+                <li>5) นักพัฒนาระบบสมองกลฝังตัวและไอโอที</li>
+            </ul>
+            <h3 style="margin-top:22px;">โครงสร้างของหลักสูตร</h3>
+            <ul>
+                <li>หลักสูตรปริญญาตรี 4 ปี</li>
+                <li>รับทั้งนักศึกษาไทยและนักศึกษาต่างชาติ</li>
+                <li>จํานวนหน่วยกิตรวมตลอดหลักสูตร 132 หน่วยกิต</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- ส่วน Parallax สำหรับข้อความขอบคุณ -->
+<section class="parallax bg2">
+    <div class="center-message">Thanks for visiting!</div>
+</section>
+<!-- ส่วนข้อมูลการติดต่อ (Contact) พร้อมไอคอนอีเมลและไอจี -->
+<section class="contact-section">
+    <div class="contact-title">ข้อมูลการติดต่อ</div>
+    <div class="contact-icons">
+        <!-- ไอคอนอีเมล -->
+        <a href="mailto:suteemon@email.com" class="contact-icon" title="Email" target="_blank">
+            <!-- Email SVG -->
+            <svg width="38" height="38" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#e3e7f0"/><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Zm2.28.22a.75.75 0 0 0-.78 1.28l6 3.75a.75.75 0 0 0 .78 0l6-3.75a.75.75 0 1 0-.78-1.28L12 10.94 6.28 7.72Z" fill="#3949ab"/></svg>
+        </a>
+        <!-- ไอคอน Instagram -->
+        <a href="https://instagram.com/suteemon_ig" class="contact-icon" title="Instagram" target="_blank">
+            <!-- Instagram SVG -->
+            <svg width="38" height="38" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#e3e7f0"/><path d="M7.75 4A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 8.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5Zm0 1.5A2 2 0 1 0 14 12a2 2 0 0 0-2-2Zm4.25-.75a.75.75 0 1 1-.75.75.75.75 0 0 1 .75-.75Z" fill="#e1306c"/></svg>
+        </a>
+    </div>
+</section>
 </body>
 </html>
